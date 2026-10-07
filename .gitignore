@@ -1,0 +1,36 @@
+# --- secrets ---
+.env
+.env.local
+*.key
+
+# --- data: contracts and corpora never get committed ---
+/data/
+*.pdf
+*.db
+*.sqlite
+*.sqlite3
+
+# --- python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- notebooks ---
+.ipynb_checkpoints/
+
+# --- model / embedding caches (Layer 2+) ---
+/.cache/
+/models/
+*.faiss
+
+# --- macOS / editors ---
+.DS_Store
+.idea/
+.vscode/
